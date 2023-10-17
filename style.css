@@ -42,6 +42,6 @@ body{
 }
 @keyframes dropShadow {
     0%{width: 40%;}
-    100%{width: 80%;}
-    
+    100%{width: 80%;
+    }
 }
