@@ -56,7 +56,8 @@ html{
 }
 
 body{
-    background-color: var(--bg-lavender-blush);
+    background-color: var(--bg-white-);
+    font-family: 'Tilt Neon', sans-serif;
     color: var(--text-granite-gray);
     font-size: var(--fontsize-6);
     line-height: 1.8;
@@ -93,14 +94,16 @@ body{
     100%{transform: translateY(0);}
 }
 
-.inner{
+.container{padding-inline: 16px;}
+
+.preloader-inner{
     position: relative;
 }
 
-.inner::after{
+.preloader-inner::after{
     content:"";
     position: absolute;
-    bottom: -53px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     width:80%;
@@ -115,3 +118,45 @@ body{
     100%{width: 80%;
     }
 }
+
+.navbar-link{
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: 400px;
+    font-size: medium;
+    color: rgb(36, 30, 30);
+}
+.header-action{
+    font-size: medium;
+}
+
+.navbar,
+.overlay {
+    display:none;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    padding-block: 30px;
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    z-index: 4;
+}
+
+.header.active{
+    position: fixed;
+    background-color:white;
+    box-shadow: var(--shadow-1);
+    animation: slideIn 500ms ease forwards;
+}
+@keyframes slideIn {
+    0%{ transform: translateY(-100%);}
+    100%{ transform: translateX(0);}
+}
+
+
