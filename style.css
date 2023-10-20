@@ -162,6 +162,10 @@ body{
     width: 160px;
 }
 
+.header-action{
+    color: grey;
+}
+
 .nav-toggle-btn{
     font-size: 3.2rem;
 }
@@ -203,4 +207,33 @@ body{
     font-weight:medium;
     padding-block: 8px;
     transition: var(--transition-1);
+}
+
+.navbar-link::before{
+    content: "";
+    position: absolute;
+    width:3px;
+    height: 10px;
+    background-color: rgb(121, 85, 231);
+    top:50%;
+    left:-10px;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    opacity:0;
+    transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active)::before{opacity: 1;}
+.navbar-link:hover{
+    transition: 200ms;
+}
+.navbar-link:is(:hover, :focus-visible, .active){transform: translateX(10px);}
+
+.header-action{
+    margin-block-start:200px;
+    padding-block-end: 20px ;
+    border-block-start: 1px solid gainsboro;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
 }
