@@ -267,7 +267,3 @@ body{
 
 .login-btn:is(:hover, :focus-visible){opacity: 0.8;}
 
-.btn-primary{
-    margin-top: 19px;
-    padding: 10px;
-}
