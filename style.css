@@ -63,6 +63,8 @@ body{
     line-height: 1.8;
 }
 
+body.nav-active{overflow:hidden;}
+
 body{
     background-color: lavenderblush;
 }
@@ -122,6 +124,19 @@ body{
     box-shadow: var(--shadow-2);
 }
 
+.btn-secondary{
+    background-color: rgb(248, 78, 78);
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top:10px;
+}
+
+.btn-secondary:is(:hover, :focus-visible){
+    background-color: rgb(183, 61, 61);
+    box-shadow: var(--shadow-3);
+}
+
 .preloader-inner{
     position: relative;
 }
@@ -154,9 +169,7 @@ body{
 .header-action{
     font-size: medium;
 }
-.overlay{
-    display:none;
-}
+
 .header .container{
     display: flex;
     justify-content: space-between;
@@ -273,5 +286,22 @@ body{
 }
 
 .login-btn:is(:hover, :focus-visible){opacity: 0.8;}
+
+.overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-1);
+}
+
+.overlay.active{
+    visibility: visible;
+    opacity: 0.5;
+}
 
 
