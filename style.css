@@ -222,6 +222,7 @@ body{
     z-index: 1;
     transition: 400ms var(--cubic-out);
     visibility: hidden;
+    transition: all 500ms linear;
 }
 .navbar.active{
     transform: translateX(-350px);
