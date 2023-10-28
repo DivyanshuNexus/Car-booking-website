@@ -105,8 +105,8 @@ body{
     border-radius: var(--radius-pill);
     display: flex;
     justify-content: center;
-    align-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 3px;
     max-width: max-content;
     transition: 500ms;
 }
@@ -129,7 +129,6 @@ body{
     border-radius: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-top:10px;
 }
 
 .btn-secondary:is(:hover, :focus-visible){
@@ -187,10 +186,15 @@ body{
 
 .header.active{
     position: fixed;
-    background-color:transparent;
+    background-color:lavenderblush;
     box-shadow: 0px 1px 10px black;
     animation: slideIn 500ms ease forwards;
 }
+
+.logoIMG{
+    mix-blend-mode: multiply;
+}
+
 @keyframes slideIn {
     0%{ transform: translateY(-100%);}
     100%{ transform: translateX(0);}
@@ -303,6 +307,10 @@ body{
 .overlay.active{
     visibility: visible;
     opacity: 0.5;
+}
+
+.text{
+    text-align: left;
 }
 
 
