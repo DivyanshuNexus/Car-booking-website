@@ -244,11 +244,13 @@ body {
     left: 0;
     width: 100%;
     z-index: 4;
+    background-color: white;
+    box-shadow: 0px 1px 10px black;
 }
 
 .header.active {
     position: fixed;
-    background-color: lavenderblush;
+    background-color: white;
     box-shadow: 0px 1px 10px black;
     animation: slideIn 500ms ease forwards;
 }
@@ -428,4 +430,37 @@ body {
     gap: 30px;
     align-items: center;
     transition: var(--transition-1);
+}
+
+.hero-btn .btn-img{
+    position: relative;
+    width:60px;
+    height: 60px;
+    background-color: var(--bg-gainsboro);
+    border-radius: var(--radius-circle);
+    box-shadow: var(--shadow-1);
+}
+
+.hero-btn .img-cover{
+    border-radius: 50%;
+}
+
+.hero-btn ion-icon{
+    position: absolute;
+    top:83%;
+    right:0;
+    transform: translate(170%, -50%);
+    background-color: white;
+    padding:10px;
+    border-radius: 50%;
+     box-shadow: var(--shadow-1);
+}
+
+.hero-btn:is(:hover, :focus-visible) {color: #6050DC;}
+
+.text{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 40px;
 }
