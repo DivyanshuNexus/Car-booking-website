@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 li {
     list-style: none;
 }
@@ -58,8 +59,7 @@ html {
 
 body {
     background-color: var(--bg-white-);
-    font-family: 'Tilt Neon', sans-serif;
-    color: var(--text-granite-gray);
+    font-family: 'Lexend Deca', sans-serif;
     font-size: var(--fontsize-6);
     line-height: 1.8;
 }
@@ -125,7 +125,6 @@ body {
     border-radius: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-top: 10px;
     background-color: rgb(99, 63, 207);
 }
 
@@ -190,7 +189,17 @@ body {
     mix-blend-mode: multiply;
 }
 
+.section-subtitle{
+    color:#6050DC;
+    font-size: 17px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
 
+.section-title{
+    margin-block: 10px;
+    font-size: 40px;
+}
 
 .preloader-inner {
     position: relative;
@@ -458,9 +467,31 @@ body {
 
 .hero-btn:is(:hover, :focus-visible) {color: #6050DC;}
 
+.service .container{
+    display: grid;
+    gap:25px;
+}
+
+.service-card:nth-child(2){
+    background-color: #fdf2dd;
+}
+
 .text{
     font-size: 15px;
     font-weight: bold;
     margin-left: 30px;
     margin-top: 40px;
 }
+
+.card-text{
+    color: grey;
+    font-size: 17px;
+    margin-block-end: 30px;
+}
+
+.section-text{
+    color: grey;
+    font-size: 17px;
+    margin-block-end: 30px;
+}
+
