@@ -476,6 +476,10 @@ body {
     background-color: #fdf2dd;
 }
 
+.service-card:nth-child(3){
+    background-color: rgb(230, 172, 172);
+}
+
 .text{
     font-size: 15px;
     font-weight: bold;
