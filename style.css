@@ -473,11 +473,24 @@ body {
 }
 
 .service-card:nth-child(2){
-    background-color: #fdf2dd;
+    background-color: #fbf4e7;
 }
 
 .service-card:nth-child(3){
-    background-color: rgb(230, 172, 172);
+    background-color: rgb(251, 233, 233);
+}
+
+.service-card:nth-child(4){
+    background-color: #eeedfb;
+}
+
+.service-card{
+    padding: 25px 20px 5px;
+    border-radius: 10px;
+}
+
+.service-card .card-title{
+    margin-block: 10px 5px;
 }
 
 .text{
