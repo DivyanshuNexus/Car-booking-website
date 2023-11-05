@@ -201,6 +201,12 @@ body {
     font-size: 40px;
 }
 
+.img-holder{
+    aspect-ratio: var(--width)/ var(--height);
+    background-color: gainsboro;
+    overflow:hidden;
+}
+
 .preloader-inner {
     position: relative;
 }
@@ -491,6 +497,20 @@ body {
 
 .service-card .card-title{
     margin-block: 10px 5px;
+}
+
+.desti .section-title{
+    margin-block-end: 40px;
+}
+
+.desti-list{
+    display: grid;
+    gap:30px
+}
+
+.desti-card.card-banner{
+    position: relative;
+    border-radius:30px;
 }
 
 .text{
