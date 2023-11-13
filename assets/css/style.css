@@ -958,7 +958,7 @@ body.nav-active {
       }
 
       :is(.desti, .gallery) :is(.section-subtitle, .section-title) {
-        text-align: center;
+        text-align: left;
       }
 
   }
