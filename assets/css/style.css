@@ -54,6 +54,7 @@
   --fontSize-5: 2rem;
   --fontSize-6: 1.6rem;
   --fontSize-7: 1.5rem;
+  --fontSize-8: 1.2rem;
 
   /* font weight */
   --weight-bold: 700;
@@ -524,6 +525,7 @@ body.nav-active {
 
 .hero-text {
   margin-block-end: 30px;
+  font-size: var(--fontSize-7);
 }
 
 .hero .btn-secondary {
@@ -575,6 +577,7 @@ body.nav-active {
 .service .container {
   display: grid;
   gap: 25px;
+  font-size: var(--fontSize-7);
 }
 
 .service-card:nth-child(2) {
@@ -592,6 +595,7 @@ body.nav-active {
 .service-card {
   padding: 25px 20px;
   border-radius: var(--radius-20);
+  font-size: var(--fontSize-8);
 }
 
 .service-card .card-title {
@@ -954,6 +958,10 @@ body.nav-active {
         text-align: center;
       }
 
+      .section-subtitle{
+        font-size: var(--fontSize-3);
+      }
+
 
       /**
       * PRELOADER
@@ -964,6 +972,10 @@ body.nav-active {
       /**
       *HEADER
       */
+
+      p.text{
+        font-size: var(--fontSize-8);
+      }
 
       .hero { padding-block-start: 180px; }
 
@@ -1000,6 +1012,18 @@ body.nav-active {
       /**
       *DESTINATION
       */
+      
+      .card-content .card-text{
+        font-size: var(--fontSize-6);
+      }
+
+      .card-rating{
+        font-size: var(--fontSize-8);
+      }
+
+      .rating-text{
+        font-size: var(--fontSize-8);
+      }
 
       .desti .section-title { margin-block-end: 65px; }
 
@@ -1013,8 +1037,10 @@ body.nav-active {
       /**
       *EXPERIENCE
       */
-
-      .exp .section-text{ max-width: 600px; }
+      .exp .section-text{ 
+        max-width: 600px;
+        font-size: var(--fontSize-7);
+       }
 
       .exp-list {
         display: flex;
@@ -1168,6 +1194,10 @@ body.nav-active {
 
     .exp-list { flex-wrap: wrap; }
 
+    .item-text {
+      font-size: var(--fontSize-8);
+    }
+
     .exp-item {
       margin-block-start: 0;
       flex-direction: column;
@@ -1296,7 +1326,11 @@ body.nav-active {
     *CTA
     */
 
-    .cta-card { padding-block: 120px; }
+    /* .cta-card { padding-block: 120px; } */
+
+    .cta-card .section-text {
+      font-size: var(--fontSize-7);
+    }
 
     /**
     *FOOTER
